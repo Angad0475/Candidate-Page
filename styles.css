@@ -118,7 +118,18 @@ span a {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     overflow-y: auto;
-    z-index:100;
+    z-index:1000;
+}
+.cross {
+  position: absolute; /* Absolute positioning relative to the sidebar */
+  top: -3px; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  font-size: 24px; /* Increase 'X' size */
+  color: #333131; /* Ensure visibility */
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10; /* Ensure the button is above other content */
 }
 
 .sidebar.open {
@@ -176,6 +187,9 @@ span a {
     .menu-icon {
         display: block;
     }
+    .cross{
+      display:block;
+    }
 
     .sidebar {
         display: block;
@@ -186,7 +200,9 @@ span a {
     .menu-icon {
         display: none;
     }
-
+    .cross{
+      display:none;
+    }
     .sidebar {
         display: none;
     }
