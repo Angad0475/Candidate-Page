@@ -537,7 +537,7 @@ section {
     }
 }
 
-@media(max-width:500px) and (max-width:400px){
+@media(max-width:500px) and (min-width:400px){
   .footer-container{
     display: flex;
     flex-direction:column;
